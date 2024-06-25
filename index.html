@@ -17,22 +17,25 @@
                     Some fields are missing
                 </div>
             </ul>
-            <form class="row g-3">
-                <div class="col-md-5">
-                  <label for="inputEmail4" class="form-label fw-medium">Card #</label>
-                  <input type="number" class="form-control" id="inputEmail4" placeholder="XXXXXXXXXXXXXX">
-                </div>
-                <div class="col-md-3">
-                  <label for="inputPassword4" class="form-label fw-medium">CVC #</label>
-                  <input type="number" class="form-control" id="inputPassword4" placeholder="0000">
-                </div>
-                <div class="col-4">
-                  <label for="inputAddress" class="form-label fw-medium">Amount</label>
-                  <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">$</span>
-                    <input type="number" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+            <form>
+                <div class="row">
+                  <div class="col-md-5">
+                    <label for="inputEmail4" class="form-label fw-medium">Card #</label>
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="XXXXXXXXXXXXXX">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="inputPassword4" class="form-label fw-medium">CVC #</label>
+                    <input type="number" class="form-control" id="inputPassword4" placeholder="0000">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputAddress" class="form-label fw-medium">Amount</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">$</span>
+                      <input type="number" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                    </div>
                   </div>
                 </div>
+               <div class="row">
                 <div class="col-6">
                   <label for="inputAddress2" class="form-label fw-medium">First Name</label>
                   <input type="text" class="form-control" id="inputAddress2">
@@ -41,56 +44,59 @@
                   <label for="inputAddress2" class="form-label fw-medium">Last Name</label>
                   <input type="text" class="form-control" id="inputAddress2">
                 </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label fw-medium">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+               </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label fw-medium">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label fw-medium">State</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Pick a state</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label fw-medium">Postal Code</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
                 </div>
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label fw-medium">State</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Pick a state</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="inputZip" class="form-label fw-medium">Postal Code</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12 d-flex justify-content-between">
-                  <div class="col-6 d-flex flex-column gap-2">
-                    <span class="fw-medium">We accept:</span>
-                    <div class="bg-secondary d-flex align-self-start p-2 rounded">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <i class="fa-solid fa-credit-card"></i>
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          <i class="fa-solid fa-credit-card"></i>
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          <i class="fa-solid fa-credit-card"></i>
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          <i class="fa-solid fa-credit-card"></i>
-                        </label>
+                <div class="row mb-4">
+                    <div class="col-6 d-flex flex-column gap-2">
+                      <span class="fw-medium">We accept:</span>
+                      <div class="bg-secondary d-flex align-self-start p-2 rounded">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            <i class="fa-solid fa-credit-card"></i>
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            <i class="fa-solid fa-credit-card"></i>
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            <i class="fa-solid fa-credit-card"></i>
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            <i class="fa-solid fa-credit-card"></i>
+                          </label>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-6">
-                    <label class="fw-medium" for="floatingTextarea">Message</label>
-                    <textarea class="form-control" id="floatingTextarea"></textarea>
-                    <div class="form-text">Add any notes here.</div>
-                  </div>
+                    <div class="col-6">
+                      <label class="fw-medium" for="floatingTextarea">Message</label>
+                      <textarea class="form-control" id="floatingTextarea"></textarea>
+                      <div class="form-text">Add any notes here.</div>
+                    </div>
                 </div>
                 <div class="card-footer text-body-secondary d-flex justify-content-end align-content-center gap-1">
                   <button type="submit" class="btn btn-secondary">Cancel</button>
